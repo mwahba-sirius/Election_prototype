@@ -24,18 +24,17 @@ export const SideMenuItem = ({ text, style, color, link }: { text: string; style
 }
 export const Select = ({ options, label, required, style, register, name,disabled }: { options: { label: string, value: string }[], label: string, required?: boolean, style?: CSSProperties, register: any, name: string;disabled? : boolean }) => (
   <div style={style}>
-    <div style={{ fontSize: "1.5rem" }}> {label} </div>
-    <div><select name={name} style={{ color: "#53A78B", fontSize: "20px", fontFamily: "El Messiri", backgroundColor: "#F7F7F7", borderWidth: "0px", height: "3rem", width: "24rem", marginTop: "1rem" }} {...register(name)} disabled={disabled}>
-      {options.map((x) => (
-        <option value={x.value}>{x.label}</option>
-      ))}
+    <div style={{ fontSize: "1.5rem" }}> {label} {required && (<span style={{color : "#53A78B"}}>*</span>)} </div>
+    <div><select name={name} style={{ color: "#53A78B", fontSize: "20px", fontFamily: "Cairo", backgroundColor: "#F7F7F7", borderWidth: "0px", height: "3rem", width: "24rem", marginTop: "1rem" }} {...register(name)} disabled={disabled}>
+        <option value={undefined} selected disabled hidden>Choose here</option>
+      {options.map((x) => (<option value={x.value}>{x.label}</option>))}
     </select>
     </div>
   </div>
 );
 export const TextField = ({ label, required, style, register, name, upload }: { label: string, required?: boolean, style?: CSSProperties, register: any, name: string, upload?: boolean }) => (
   <div style={style}>
-    <div style={{ fontSize: "1.5rem" }}> {label} </div>
+    <div style={{ fontSize: "1.5rem" }}> {label} {required && (<span style={{color : "#53A78B"}}>*</span>)} </div>
     <div><input type={upload ? "file" : "text"} name={name} style={{ color: "#53A78B", fontSize: "20px", fontFamily: "El Messiri", backgroundColor: "#F7F7F7", borderWidth: "0px", height: "3rem", width: "24rem", marginTop: "1rem" }} {...register(name)} />
     </div>
   </div>

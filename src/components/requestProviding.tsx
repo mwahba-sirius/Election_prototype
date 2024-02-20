@@ -10,13 +10,13 @@ export const RequestProviding = ({ onClick }: { onClick: () => void }) => {
             <div style={{ marginRight: "5rem", marginTop: "7rem", display: "flex", }}>
                 <div style={{ flexBasis: "50%" }}>
                     <div>
-                        <Select register={form.register} name="entity" label='الجهه' options={[{ label: "نادي الزمالك", value: "نادي الزمالك" }]} />
+                        <Select register={form.register} required name="entity" label='الجهه' options={[{ label: "نادي الزمالك", value: "نادي الزمالك" }]} />
                     </div>
                     <div style={{ marginTop: "1rem" }}>
-                        <Select register={form.register} name="election" label='الانتخاب' options={[{ label: "انتخابات مجلس الادارة", value: "انتخابات مجلس الادارة" }]} />
+                        <Select register={form.register} required name="election" label='الانتخاب' options={[{ label: "انتخابات مجلس الادارة", value: "انتخابات مجلس الادارة" }]} />
                     </div>
                     <div style={{ marginTop: "1rem" }}>
-                        <Select register={form.register} name="position" label='المنصب المراد الترشح له' options={[{ label: "عضو مجلس الاداره", value: "عضو مجلس الاداره" }, { label: "رئيس مجلس الاداره", value: "رئيس مجلس الاداره" }]} />
+                        <Select register={form.register} required name="position" label='المنصب المراد الترشح له' options={[{ label: "عضو مجلس الاداره", value: "عضو مجلس الاداره" }, { label: "رئيس مجلس الاداره", value: "رئيس مجلس الاداره" }]} />
                     </div>
                 </div>
                 <div style={{ border: "2px solid #CE5555", borderRadius: "0.5rem", width: "30rem", height: "10rem", fontSize: "1.5rem", paddingBlock: "1rem", paddingInline: "1rem" }}>

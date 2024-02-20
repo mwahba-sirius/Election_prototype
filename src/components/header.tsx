@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import logo from "../assets/logo.jpeg"
+import logo2 from "../assets/logo2.jpg"
 const MenuItem = ({ name,onClick }: { name: string,onClick? : () => void }) => {
     return (
         <div style={{ borderInlineEnd: "1px solid #B0B3C7", padding: "1rem 3rem 1rem 3rem", fontSize: "1.5rem",cursor : "pointer" }} onClick={onClick}>
@@ -14,7 +15,7 @@ export const Header = () => {
             <div style={{ flexBasis: "30%", color: "black", fontSize: "1.5rem", fontWeight: "bolder", marginInlineStart: "2rem", fontFamily: "El Messiri",display : "flex",justifyContent : "center",alignItems : "center" }}>
                 <img src={logo} width={"60rem"} style={{marginInline : "1rem"}} />
                 المنصة الرقمية للانتخابات
-                <img src={logo} width={"60rem"} style={{marginInline : "1rem"}} />
+                <img src={logo2} width={"160rem"} style={{marginInline : "1rem"}} />
             </div>
             <div id="menu" style={{ flexBasis: "60%", marginInlineStart: "2rem", display: "flex", justifyContent: "center" }}>
                 <MenuItem name="الرئيسيه" onClick={() => {navigate("/")}} />

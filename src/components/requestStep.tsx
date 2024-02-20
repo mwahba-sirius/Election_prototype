@@ -24,16 +24,16 @@ export const RequestStep = () => {
                     <div style={{ marginRight: "5rem", marginTop: "7rem", display: "flex", }}>
                         <div style={{ flexBasis: "50%" }}>
                             <div>
-                                <TextField register={form.register} name="name" label='الاسم' />
+                                <TextField required register={form.register} name="name" label='الاسم' />
                             </div>
                             <div style={{ marginTop: "1rem" }}>
                                 <TextField register={form.register} name="nickName" label='اسم الشهره' />
                             </div>
                             <div style={{ marginTop: "1rem" }}>
-                                <TextField register={form.register} name="idNumber" label='الرقم القومي' />
+                                <TextField required register={form.register} name="idNumber" label='الرقم القومي' />
                             </div>
                             <div style={{ marginTop: "1rem" }}>
-                                <TextField register={form.register} name="picture" label='صورة المرشح' upload />
+                                <TextField required register={form.register} name="picture" label='صورة المرشح' upload />
                             </div>
                         </div>
                         <div style={{ border: "2px solid #CE5555", borderRadius: "0.5rem", width: "30rem", height: "10rem", fontSize: "1.5rem", paddingBlock: "1rem", paddingInline: "1rem" }}>
