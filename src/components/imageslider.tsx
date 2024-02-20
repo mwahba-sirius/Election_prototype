@@ -33,6 +33,7 @@ export const ImageSlider = () => {
         url(${images[currentSlide].image})`, borderRadius: "2rem", flexBasis: "90%", height: "30rem",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
+                backgroundPosition : "center center",
                 position: "relative"
             }}>
                 <div style={{ position: "absolute", bottom: "0", color: "white", left: "50%", transform: "translateX(-50%)", marginBottom: "2rem" }}>
