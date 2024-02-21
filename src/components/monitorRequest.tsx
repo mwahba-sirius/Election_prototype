@@ -19,7 +19,7 @@ export const MonitorRequest = () => {
             <div style={{ marginRight: "5rem", marginTop: "7rem", display: "flex", }}>
                 <div style={{ flexBasis: "50%" }}>
                     <div>
-                        <Select disabled register={form.register} name="entity" label='الجهه' options={[{ label: "نادي الزمالك", value: "نادي الزمالك" }]} />
+                        <Select disabled register={form.register} name="entity" label='الجهة' options={[{ label: "نادي الزمالك", value: "نادي الزمالك" }]} />
                     </div>
                     <div style={{ marginTop: "1rem" }}>
                         <Select disabled register={form.register} name="election" label='الانتخاب' options={[{ label: "انتخابات مجلس الادارة", value: "انتخابات مجلس الادارة" }]} />
