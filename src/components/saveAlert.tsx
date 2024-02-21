@@ -10,21 +10,20 @@ export const SaveAlert = ({ text }: { text: string }) => {
             <div style={{
                 position: "fixed",
                 textAlign: "center",
-                width: "400px",
-                height: "200px",
+                width: "600px",
+                minHeight: "300px",
                 borderRadius: "0.5rem",
                 boxShadow: " 0px 2px 20px -7px rgba(0,0,0,0.75)",
                 top: "50%",
                 left: "50%",
                 zIndex: 2,
                 backgroundColor: "white",
-
                 transform: "translate(-50%, -50%)",
             }}>
-                <div style={{ color: "#CE5555", fontSize: "2rem" }}>تنبية</div>
-                <div style={{ fontSize: "1rem" }}>{text}</div>
+                <div style={{ color: "#CE5555", fontSize: "3.5rem" }}>تنبية</div>
+                <div style={{ fontSize: "2rem" }}>{text}</div>
                 <hr style={{ marginInline: "1rem", marginTop: "2rem" }} />
-                <div style={{ color: "#53A78B", fontSize: "1.5rem", cursor: "pointer" }} onClick={() => { navigate("/service") }}>حسنا</div>
+                <div style={{ color: "#53A78B", fontSize: "2.5rem", cursor: "pointer" }} onClick={() => { navigate("/service") }}>حسنا</div>
             </div>
         </>
     )

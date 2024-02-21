@@ -26,7 +26,7 @@ export const Select = ({ options, label, required, style, register, name,disable
   <div style={style}>
     <div style={{ fontSize: "1.5rem" }}> {label} {required && (<span style={{color : "#53A78B"}}>*</span>)} </div>
     <div><select name={name} style={{ color: "#53A78B", fontSize: "20px", fontFamily: "Cairo", backgroundColor: "#F7F7F7", borderWidth: "0px", height: "3rem", width: "24rem", marginTop: "1rem" }} {...register(name)} disabled={disabled}>
-        <option value={undefined} selected disabled hidden>اختر من القائمه</option>
+        <option value={undefined} selected disabled hidden>اختر من القائمة</option>
       {options.map((x) => (<option value={x.value}>{x.label}</option>))}
     </select>
     </div>
