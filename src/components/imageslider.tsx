@@ -30,8 +30,8 @@ export const ImageSlider = () => {
           rgba(0, 0, 0, 0.2), 
           rgba(0, 0, 0, 0.2)
         ),
-        url(${images[currentSlide].image})`, borderRadius: "2rem", flexBasis: "90%", height: "30rem",
-                backgroundSize: 'cover',
+        url(${images[currentSlide].image})`, borderRadius: "2rem", flexBasis: "70%", height: "38rem",
+                backgroundSize: '100% 100%',
                 backgroundRepeat: 'no-repeat',
                 position: "relative"
             }}>

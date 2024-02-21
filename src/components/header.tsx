@@ -18,8 +18,8 @@ export const Header = () => {
                 <img src={logo2} width={"160rem"} style={{marginInline : "1rem"}} />
             </div>
             <div id="menu" style={{ flexBasis: "60%", marginInlineStart: "2rem", display: "flex", justifyContent: "center" }}>
-                <MenuItem name="الرئيسيه" onClick={() => {navigate("/")}} />
-                <MenuItem name="عن الهيئه" />
+                <MenuItem name="الرئيسية" onClick={() => {navigate("/")}} />
+                <MenuItem name="عن الهيئة" />
                 <MenuItem name="الخدمات" onClick={() => {navigate("/service")}} />
                 <MenuItem name="نتائج الانتخابات" />
                 <MenuItem name="اتصل بنا" />

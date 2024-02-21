@@ -10,7 +10,7 @@ export const RequestProviding = ({ onClick }: { onClick: () => void }) => {
             <div style={{ marginRight: "5rem", marginTop: "7rem", display: "flex", }}>
                 <div style={{ flexBasis: "50%" }}>
                     <div>
-                        <Select register={form.register} required name="entity" label='الجهه' options={[{ label: "نادي الزمالك", value: "نادي الزمالك" }]} />
+                        <Select register={form.register} required name="entity" label='الجهة' options={[{ label: "نادي الزمالك", value: "نادي الزمالك" }]} />
                     </div>
                     <div style={{ marginTop: "1rem" }}>
                         <Select register={form.register} required name="election" label='الانتخاب' options={[{ label: "انتخابات مجلس الادارة", value: "انتخابات مجلس الادارة" }]} />
