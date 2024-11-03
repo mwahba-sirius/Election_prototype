@@ -40,10 +40,10 @@ export const MonitorRequest = () => {
                 حالة الطلب : تم قبول طلبك و تم ادراج اسمك بكشوف المرشحين المرشح رقم (1)
                 <div>
                     هل ترغب في التنازل
-                    <span style={{ width: "6rem", height: "2rem", border: "1px solid #CE5555", borderRadius: "0.5rem", display: "inline-flex", justifyContent: "center", alignItems: "center", marginRight: "1rem",cursor : "pointer" }} onClick={() => {setShowAlert(true)}}>
+                    <span style={{ width: "6rem", height: "2rem", border: "1px solid #53A78B", borderRadius: "0.5rem", display: "inline-flex", justifyContent: "center", alignItems: "center", marginRight: "1rem",cursor : "pointer" }} onClick={() => {setShowAlert(true)}}>
                         لا
                     </span>
-                    <span style={{ width: "6rem", height: "2rem", border: "1px solid #53A78B", color: "#CE5555",  borderRadius: "0.5rem", display: "inline-flex", justifyContent: "center", alignItems: "center", marginRight: "1rem"}}>
+                    <span style={{ width: "6rem", height: "2rem", border: "1px solid #CE5555", color: "#CE5555",  borderRadius: "0.5rem", display: "inline-flex", justifyContent: "center", alignItems: "center", marginRight: "1rem"}}>
                         نعم
                     </span>
                 </div>
