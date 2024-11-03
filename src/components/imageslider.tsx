@@ -3,9 +3,8 @@ import slide1 from "./../assets/slider_1.jpg"
 import slide2 from "./../assets/slider_2.jpg"
 export const ImageSlider = () => {
     const images = [{
-        image: slide1, text: `وزارتا الشباب والتخطيط وهيئة النيابة الادارية يوقعون بروتوكول تعاون لتطبيق نظام التصويت
-                        الالكتروني فى انتخابات الهيئات الشبابية`},
-    { image: slide2, text: "النيابة الإدارية تطلق لأول مرة تطبيقا لتلقى شكاوى المواطنين ضد الموظفين" }];
+        image: slide1, text: `النيابة الإدارية توقع بروتوكولاً للتصويت الإلكتروني بالتعاون مع وزارتي التخطيط والتنمية الاقتصادية والشباب والرياضة`},
+    { image: slide2, text: "لأول مرة.. هيئة النيابة الإدارية تطلق تطبيقاً لتلقي شكاوى المواطنين ضد الموظفين" }];
     const [currentSlide, setCurrentSlide] = useState(0);
     return (
         <div style={{ marginTop: "1rem", display: "flex", width: "100%", justifyContent: "space-evenly", alignItems: "center" }}>
